@@ -1,0 +1,62 @@
+/* Hertzi design tokens — change these and the whole app reskins. */
+:root {
+  --hz-orange-light: #fdba74;
+  --hz-orange: #f97316;
+  --hz-pink: #ec4899;
+  --hz-pink-deep: #d6336c;
+  --hz-purple-deep: #c026d3;
+
+  --hz-ink: #201233;
+  --hz-ink-soft: #6b5c7a;
+  --hz-muted: #c7bccb;
+
+  --hz-bg: #ffffff;
+  --hz-bg-warm: #fffcfa;
+  --hz-line: #f1e1ec;
+  --hz-chip-bg: #fdf1f6;
+  --hz-chip-text: #d6336c;
+
+  --hz-gradient: linear-gradient(90deg, var(--hz-orange) 0%, var(--hz-pink) 100%);
+  --hz-gradient-bold: linear-gradient(
+    135deg,
+    var(--hz-orange-light) 0%,
+    var(--hz-orange) 30%,
+    var(--hz-pink) 70%,
+    var(--hz-purple-deep) 100%
+  );
+
+  --font-display: 'Baloo 2', ui-rounded, 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--hz-ink);
+  background: var(--hz-bg);
+}
+
+a {
+  color: var(--hz-pink-deep);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--hz-purple-deep);
+}
+
+.hz-label {
+  font-family: var(--font-body);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hz-gradient-text {
+  background: var(--hz-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
